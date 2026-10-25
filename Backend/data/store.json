@@ -1,0 +1,1775 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "full_name": "Admin Quản Trị",
+      "email": "admin@appointment.vn",
+      "phone": "0901000001",
+      "role": "ADMIN",
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "full_name": "Nguyễn Văn A",
+      "email": "nguyenvana@gmail.com",
+      "phone": "0987654321",
+      "role": "CUSTOMER",
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "full_name": "Trần Thị B",
+      "email": "tranthib@gmail.com",
+      "phone": "0912345678",
+      "role": "CUSTOMER",
+      "is_active": true
+    },
+    {
+      "id": 4,
+      "full_name": "Lê Văn C",
+      "email": "levanc@gmail.com",
+      "phone": "0933445566",
+      "role": "CUSTOMER",
+      "is_active": true
+    },
+    {
+      "id": 5,
+      "full_name": "Phạm Thị D",
+      "email": "phamthid@gmail.com",
+      "phone": "0977889900",
+      "role": "CUSTOMER",
+      "is_active": true
+    },
+    {
+      "id": 6,
+      "full_name": "Nguyễn Thị Mai",
+      "email": "mai.nguyen@appointment.vn",
+      "phone": "0902111222",
+      "role": "EMPLOYEE",
+      "is_active": true
+    },
+    {
+      "id": 7,
+      "full_name": "Trần Văn Hùng",
+      "email": "hung.tran@appointment.vn",
+      "phone": "0902333444",
+      "role": "EMPLOYEE",
+      "is_active": true
+    },
+    {
+      "id": 8,
+      "full_name": "Lê Thị Hoa",
+      "email": "hoa.le@appointment.vn",
+      "phone": "0902555666",
+      "role": "EMPLOYEE",
+      "is_active": true
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Tư vấn sức khỏe",
+      "description": "Tư vấn trực tiếp cùng bác sĩ về chế độ sinh hoạt và phòng ngừa bệnh lý.",
+      "price": 0,
+      "duration_minutes": 15,
+      "icon_type": "shield",
+      "color_theme": "blue",
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "name": "Khám tổng quát",
+      "description": "Kiểm tra sức khỏe toàn diện định kỳ, đo huyết áp, tim mạch và lâm sàng.",
+      "price": 200000,
+      "duration_minutes": 30,
+      "icon_type": "medical",
+      "color_theme": "green",
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "name": "Khám chuyên khoa",
+      "description": "Khám chuyên sâu Nội khoa, Ngoại khoa, Tai Mũi Họng, Tim mạch với bác sĩ đầu ngành.",
+      "price": 300000,
+      "duration_minutes": 45,
+      "icon_type": "doctor",
+      "color_theme": "pink",
+      "is_active": true
+    },
+    {
+      "id": 4,
+      "name": "Xét nghiệm",
+      "description": "Xét nghiệm máu, sinh hóa, huyết học và tầm soát chỉ số sức khỏe nhanh chóng.",
+      "price": 150000,
+      "duration_minutes": 20,
+      "icon_type": "flask",
+      "color_theme": "amber",
+      "is_active": true
+    },
+    {
+      "id": 5,
+      "name": "Tư vấn dinh dưỡng",
+      "description": "Xây dựng thực đơn khoa học, cân bằng dinh dưỡng cá nhân hóa theo thể trạng.",
+      "price": 100000,
+      "duration_minutes": 30,
+      "icon_type": "heart",
+      "color_theme": "rose",
+      "is_active": true
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "user_id": 6,
+      "full_name": "Nguyễn Thị Mai",
+      "specialty": "Tư vấn sức khỏe & Dinh dưỡng",
+      "phone": "0902111222",
+      "email": "mai.nguyen@appointment.vn",
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "user_id": 7,
+      "full_name": "Trần Văn Hùng",
+      "specialty": "Bác sĩ Khám tổng quát & Chuyên khoa",
+      "phone": "0902333444",
+      "email": "hung.tran@appointment.vn",
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "user_id": 8,
+      "full_name": "Lê Thị Hoa",
+      "specialty": "Chuyên viên Xét nghiệm & Chẩn đoán",
+      "phone": "0902555666",
+      "email": "hoa.le@appointment.vn",
+      "is_active": true
+    }
+  ],
+  "standardSlots": [
+    "08:00",
+    "08:30",
+    "09:00",
+    "09:30",
+    "10:00",
+    "10:30",
+    "14:00",
+    "14:30",
+    "15:00",
+    "15:30",
+    "16:00"
+  ],
+  "appointments": [
+    {
+      "id": 6,
+      "appointment_code": "APT-2025-006",
+      "user_id": 5,
+      "customer_name": "Phạm Thị D",
+      "customer_phone": "0977889900",
+      "customer_email": "phamthid@gmail.com",
+      "service_id": 5,
+      "employee_id": 1,
+      "time_slot_id": 14,
+      "appointment_date": "2025-04-28",
+      "start_time": "15:00",
+      "end_time": "15:30",
+      "status": "CANCELLED",
+      "notes": "Bận việc đột xuất",
+      "created_at": "2026-10-24T13:23:08.111Z",
+      "updated_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 5,
+      "appointment_code": "APT-2025-005",
+      "user_id": 4,
+      "customer_name": "Lê Văn C",
+      "customer_phone": "0933445566",
+      "customer_email": "levanc@gmail.com",
+      "service_id": 4,
+      "employee_id": 3,
+      "time_slot_id": null,
+      "appointment_date": "2025-04-25",
+      "start_time": "08:30",
+      "end_time": "08:50",
+      "status": "CONFIRMED",
+      "notes": "Không",
+      "created_at": "2026-10-24T13:23:08.111Z",
+      "updated_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 4,
+      "appointment_code": "APT-2025-004",
+      "user_id": 3,
+      "customer_name": "Trần Thị B",
+      "customer_phone": "0912345678",
+      "customer_email": "tranthib@gmail.com",
+      "service_id": 2,
+      "employee_id": 2,
+      "time_slot_id": null,
+      "appointment_date": "2025-04-20",
+      "start_time": "09:30",
+      "end_time": "10:00",
+      "status": "PENDING",
+      "notes": "Tư vấn thêm về huyết áp",
+      "created_at": "2026-10-24T13:23:08.111Z",
+      "updated_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 3,
+      "appointment_code": "APT-2025-003",
+      "user_id": 2,
+      "customer_name": "Nguyễn Văn A",
+      "customer_phone": "0987654321",
+      "customer_email": "nguyenvana@gmail.com",
+      "service_id": 4,
+      "employee_id": 3,
+      "time_slot_id": 13,
+      "appointment_date": "2025-04-25",
+      "start_time": "10:00",
+      "end_time": "10:20",
+      "status": "CONFIRMED",
+      "notes": "Xét nghiệm máu tổng quát",
+      "created_at": "2026-10-24T13:23:08.111Z",
+      "updated_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 2,
+      "appointment_code": "APT-2025-002",
+      "user_id": 2,
+      "customer_name": "Nguyễn Văn A",
+      "customer_phone": "0987654321",
+      "customer_email": "nguyenvana@gmail.com",
+      "service_id": 2,
+      "employee_id": 2,
+      "time_slot_id": 12,
+      "appointment_date": "2025-04-20",
+      "start_time": "14:00",
+      "end_time": "14:30",
+      "status": "PENDING",
+      "notes": "Khám sức khỏe tổng quát định kỳ",
+      "created_at": "2026-10-24T13:23:08.111Z",
+      "updated_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 1,
+      "appointment_code": "APT-2025-001",
+      "user_id": 2,
+      "customer_name": "Nguyễn Văn A",
+      "customer_phone": "0987654321",
+      "customer_email": "nguyenvana@gmail.com",
+      "service_id": 1,
+      "employee_id": 1,
+      "time_slot_id": 3,
+      "appointment_date": "2025-04-15",
+      "start_time": "09:00",
+      "end_time": "09:15",
+      "status": "CONFIRMED",
+      "notes": "Không",
+      "created_at": "2026-10-24T13:23:08.111Z",
+      "updated_at": "2026-10-24T13:23:08.111Z"
+    }
+  ],
+  "appointment_status_history": [
+    {
+      "id": 6,
+      "appointment_id": 6,
+      "old_status": null,
+      "new_status": "CANCELLED",
+      "changed_by": "Phạm Thị D",
+      "note": "Khởi tạo lịch hẹn mới",
+      "changed_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 5,
+      "appointment_id": 5,
+      "old_status": null,
+      "new_status": "CONFIRMED",
+      "changed_by": "Lê Văn C",
+      "note": "Khởi tạo lịch hẹn mới",
+      "changed_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 4,
+      "appointment_id": 4,
+      "old_status": null,
+      "new_status": "PENDING",
+      "changed_by": "Trần Thị B",
+      "note": "Khởi tạo lịch hẹn mới",
+      "changed_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 3,
+      "appointment_id": 3,
+      "old_status": null,
+      "new_status": "CONFIRMED",
+      "changed_by": "Nguyễn Văn A",
+      "note": "Khởi tạo lịch hẹn mới",
+      "changed_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 2,
+      "appointment_id": 2,
+      "old_status": null,
+      "new_status": "PENDING",
+      "changed_by": "Nguyễn Văn A",
+      "note": "Khởi tạo lịch hẹn mới",
+      "changed_at": "2026-10-24T13:23:08.111Z"
+    },
+    {
+      "id": 1,
+      "appointment_id": 1,
+      "old_status": null,
+      "new_status": "CONFIRMED",
+      "changed_by": "Nguyễn Văn A",
+      "note": "Khởi tạo lịch hẹn mới",
+      "changed_at": "2026-10-24T13:23:08.111Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": 1792856365156,
+      "timestamp": "2026-10-24 22:39:24",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "endpoint": "SYSTEM",
+      "status": 200,
+      "message": "Connected to PostgreSQL (postgres@localhost:5432/appointment_db)"
+    },
+    {
+      "id": 1792850921507,
+      "timestamp": "2026-10-24 21:08:41",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "endpoint": "SYSTEM",
+      "status": 200,
+      "message": "Connected to PostgreSQL (postgres@localhost:5432/appointment_db)"
+    },
+    {
+      "id": 1792848188822,
+      "timestamp": "2026-10-24 20:23:08",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "endpoint": "SYSTEM",
+      "status": 200,
+      "message": "Connected to PostgreSQL (postgres@localhost:5432/appointment_db)"
+    },
+    {
+      "id": 1792848189293,
+      "timestamp": "2026-10-24 20:23:08",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "endpoint": "SYSTEM",
+      "status": 200,
+      "message": "Initialized 6 tables, Unique Indexes, Triggers & Seed Data from database/init.sql"
+    },
+    {
+      "id": 1792848188249,
+      "timestamp": "2026-10-24 20:23:08",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "endpoint": "SYSTEM",
+      "status": 200,
+      "message": "Created PostgreSQL database: appointment_db"
+    },
+    {
+      "id": 1792812177544,
+      "timestamp": "2026-10-24 10:22:56",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-17 200 - 1ms"
+    },
+    {
+      "id": 1792811921710,
+      "timestamp": "2026-10-24 10:18:41",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792811921546,
+      "timestamp": "2026-10-24 10:18:40",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792811921787,
+      "timestamp": "2026-10-24 10:18:40",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792811921476,
+      "timestamp": "2026-10-24 10:18:40",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792811921022,
+      "timestamp": "2026-10-24 10:18:40",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792811921613,
+      "timestamp": "2026-10-24 10:18:40",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792811921579,
+      "timestamp": "2026-10-24 10:18:40",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792811747534,
+      "timestamp": "2026-10-24 10:15:47",
+      "level": "ERROR",
+      "app": "appointment-backend",
+      "message": "POST /api/appointments 409 - 1ms"
+    },
+    {
+      "id": 1792811748084,
+      "timestamp": "2026-10-24 10:15:47",
+      "level": "ERROR",
+      "app": "appointment-backend",
+      "message": "DUPLICATE_BOOKING blocked: slot 09:00 on 2025-04-15 already PENDING"
+    },
+    {
+      "id": 1792811582227,
+      "timestamp": "2026-10-24 10:13:02",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792811582801,
+      "timestamp": "2026-10-24 10:13:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792811582678,
+      "timestamp": "2026-10-24 10:13:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792811582547,
+      "timestamp": "2026-10-24 10:13:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792811582266,
+      "timestamp": "2026-10-24 10:13:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792811582139,
+      "timestamp": "2026-10-24 10:13:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792811582790,
+      "timestamp": "2026-10-24 10:13:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792811551342,
+      "timestamp": "2026-10-24 10:12:31",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792811551636,
+      "timestamp": "2026-10-24 10:12:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792811551256,
+      "timestamp": "2026-10-24 10:12:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792811551384,
+      "timestamp": "2026-10-24 10:12:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792811551697,
+      "timestamp": "2026-10-24 10:12:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792811551560,
+      "timestamp": "2026-10-24 10:12:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 0ms"
+    },
+    {
+      "id": 1792811551150,
+      "timestamp": "2026-10-24 10:12:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792811432930,
+      "timestamp": "2026-10-24 10:10:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 200 - 1ms"
+    },
+    {
+      "id": 1792811433465,
+      "timestamp": "2026-10-24 10:10:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 200 - 0ms"
+    },
+    {
+      "id": 1792811433321,
+      "timestamp": "2026-10-24 10:10:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792811433139,
+      "timestamp": "2026-10-24 10:10:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792811433838,
+      "timestamp": "2026-10-24 10:10:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792811433782,
+      "timestamp": "2026-10-24 10:10:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 200 - 0ms"
+    },
+    {
+      "id": 1792811433561,
+      "timestamp": "2026-10-24 10:10:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "POST /api/appointments 201 - 2ms"
+    },
+    {
+      "id": 1792811433127,
+      "timestamp": "2026-10-24 10:10:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "Created appointment APT-2025-009 for Nguyễn Văn A at 2025-04-15 09:00"
+    },
+    {
+      "id": 1792811364372,
+      "timestamp": "2026-10-24 10:09:23",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792811364761,
+      "timestamp": "2026-10-24 10:09:23",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792811364326,
+      "timestamp": "2026-10-24 10:09:23",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792811364796,
+      "timestamp": "2026-10-24 10:09:23",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792811364687,
+      "timestamp": "2026-10-24 10:09:23",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792811364225,
+      "timestamp": "2026-10-24 10:09:23",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 0ms"
+    },
+    {
+      "id": 1792811363927,
+      "timestamp": "2026-10-24 10:09:23",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792811335536,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792811335159,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792811335510,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792811335556,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792811335164,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792811335192,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792811335424,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 0ms"
+    },
+    {
+      "id": 1792811334735,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792811335045,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792811335540,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792811334854,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792811335088,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792811334665,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 0ms"
+    },
+    {
+      "id": 1792811335201,
+      "timestamp": "2026-10-24 10:08:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792810606390,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792810605930,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792810606305,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792810606536,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792810606064,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792810606528,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792810605959,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792810606230,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792810605722,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792810606556,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792810606097,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792810606430,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792810606231,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792810606300,
+      "timestamp": "2026-10-24 09:56:45",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792808800008,
+      "timestamp": "2026-10-24 09:26:39",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792808799165,
+      "timestamp": "2026-10-24 09:26:39",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792808799750,
+      "timestamp": "2026-10-24 09:26:39",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792808799477,
+      "timestamp": "2026-10-24 09:26:39",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792808799583,
+      "timestamp": "2026-10-24 09:26:38",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792808799526,
+      "timestamp": "2026-10-24 09:26:38",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 0ms"
+    },
+    {
+      "id": 1792808799511,
+      "timestamp": "2026-10-24 09:26:38",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792808332277,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792808331569,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792808331799,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 3ms"
+    },
+    {
+      "id": 1792808331814,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 2ms"
+    },
+    {
+      "id": 1792808331566,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 3ms"
+    },
+    {
+      "id": 1792808331745,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 3ms"
+    },
+    {
+      "id": 1792808332379,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 0ms"
+    },
+    {
+      "id": 1792808331906,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792808331670,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792808332335,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792808332362,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792808331397,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792808332165,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792808331708,
+      "timestamp": "2026-10-24 09:18:51",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792808030944,
+      "timestamp": "2026-10-24 09:13:50",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-12 304 - 1ms"
+    },
+    {
+      "id": 1792808031284,
+      "timestamp": "2026-10-24 09:13:50",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-12 304 - 0ms"
+    },
+    {
+      "id": 1792808031152,
+      "timestamp": "2026-10-24 09:13:50",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792808030558,
+      "timestamp": "2026-10-24 09:13:50",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792808030865,
+      "timestamp": "2026-10-24 09:13:50",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792808031341,
+      "timestamp": "2026-10-24 09:13:50",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792808030996,
+      "timestamp": "2026-10-24 09:13:50",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792807962464,
+      "timestamp": "2026-10-24 09:12:42",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-12 200 - 1ms"
+    },
+    {
+      "id": 1792807962763,
+      "timestamp": "2026-10-24 09:12:42",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 200 - 1ms"
+    },
+    {
+      "id": 1792807962707,
+      "timestamp": "2026-10-24 09:12:42",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792807963036,
+      "timestamp": "2026-10-24 09:12:42",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792807962698,
+      "timestamp": "2026-10-24 09:12:42",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792807962224,
+      "timestamp": "2026-10-24 09:12:42",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 200 - 0ms"
+    },
+    {
+      "id": 1792807962371,
+      "timestamp": "2026-10-24 09:12:42",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "POST /api/appointments 201 - 5ms"
+    },
+    {
+      "id": 1792807962383,
+      "timestamp": "2026-10-24 09:12:42",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "Created appointment APT-2025-008 for Nguyễn Văn A at 2025-04-12 08:30"
+    },
+    {
+      "id": 1792807916635,
+      "timestamp": "2026-10-24 09:11:56",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-12 200 - 2ms"
+    },
+    {
+      "id": 1792807781112,
+      "timestamp": "2026-10-24 09:09:40",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-24 200 - 1ms"
+    },
+    {
+      "id": 1792807744972,
+      "timestamp": "2026-10-24 09:09:04",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 200 - 0ms"
+    },
+    {
+      "id": 1792807744435,
+      "timestamp": "2026-10-24 09:09:04",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 200 - 0ms"
+    },
+    {
+      "id": 1792807745010,
+      "timestamp": "2026-10-24 09:09:04",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792807744276,
+      "timestamp": "2026-10-24 09:09:04",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 200 - 0ms"
+    },
+    {
+      "id": 1792807745171,
+      "timestamp": "2026-10-24 09:09:04",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792807744473,
+      "timestamp": "2026-10-24 09:09:04",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792807744301,
+      "timestamp": "2026-10-24 09:09:04",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "PATCH /api/appointments/1/status 200 - 3ms"
+    },
+    {
+      "id": 1792807744796,
+      "timestamp": "2026-10-24 09:09:04",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "Appointment #1 status changed: CONFIRMED -> CANCELLED"
+    },
+    {
+      "id": 1792807741364,
+      "timestamp": "2026-10-24 09:09:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 200 - 1ms"
+    },
+    {
+      "id": 1792807741793,
+      "timestamp": "2026-10-24 09:09:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 200 - 0ms"
+    },
+    {
+      "id": 1792807741856,
+      "timestamp": "2026-10-24 09:09:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792807741449,
+      "timestamp": "2026-10-24 09:09:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792807742158,
+      "timestamp": "2026-10-24 09:09:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 200 - 1ms"
+    },
+    {
+      "id": 1792807741950,
+      "timestamp": "2026-10-24 09:09:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792807741323,
+      "timestamp": "2026-10-24 09:09:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "PATCH /api/appointments/7/status 200 - 4ms"
+    },
+    {
+      "id": 1792807742225,
+      "timestamp": "2026-10-24 09:09:01",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "Appointment #7 status changed: CONFIRMED -> CANCELLED"
+    },
+    {
+      "id": 1792807739881,
+      "timestamp": "2026-10-24 09:08:59",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 200 - 0ms"
+    },
+    {
+      "id": 1792807739728,
+      "timestamp": "2026-10-24 09:08:59",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 200 - 2ms"
+    },
+    {
+      "id": 1792807739779,
+      "timestamp": "2026-10-24 09:08:59",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792807739751,
+      "timestamp": "2026-10-24 09:08:59",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792807739966,
+      "timestamp": "2026-10-24 09:08:59",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 200 - 1ms"
+    },
+    {
+      "id": 1792807739957,
+      "timestamp": "2026-10-24 09:08:59",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792807739537,
+      "timestamp": "2026-10-24 09:08:59",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "PATCH /api/appointments/7/status 200 - 5ms"
+    },
+    {
+      "id": 1792807739578,
+      "timestamp": "2026-10-24 09:08:59",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "Appointment #7 status changed: PENDING -> CONFIRMED"
+    },
+    {
+      "id": 1792807355232,
+      "timestamp": "2026-10-24 09:02:35",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792807355105,
+      "timestamp": "2026-10-24 09:02:35",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792807355686,
+      "timestamp": "2026-10-24 09:02:35",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792807355732,
+      "timestamp": "2026-10-24 09:02:35",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792807356018,
+      "timestamp": "2026-10-24 09:02:35",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792807355346,
+      "timestamp": "2026-10-24 09:02:35",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792807355904,
+      "timestamp": "2026-10-24 09:02:35",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792807353939,
+      "timestamp": "2026-10-24 09:02:33",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792807353483,
+      "timestamp": "2026-10-24 09:02:33",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792807353843,
+      "timestamp": "2026-10-24 09:02:33",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792807353986,
+      "timestamp": "2026-10-24 09:02:33",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792807353643,
+      "timestamp": "2026-10-24 09:02:33",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792807353627,
+      "timestamp": "2026-10-24 09:02:33",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792807353805,
+      "timestamp": "2026-10-24 09:02:33",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792807353501,
+      "timestamp": "2026-10-24 09:02:33",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792807353529,
+      "timestamp": "2026-10-24 09:02:33",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792807353101,
+      "timestamp": "2026-10-24 09:02:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792807353117,
+      "timestamp": "2026-10-24 09:02:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792807353945,
+      "timestamp": "2026-10-24 09:02:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792807353980,
+      "timestamp": "2026-10-24 09:02:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 0ms"
+    },
+    {
+      "id": 1792807353483,
+      "timestamp": "2026-10-24 09:02:32",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792807351380,
+      "timestamp": "2026-10-24 09:02:31",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792807351938,
+      "timestamp": "2026-10-24 09:02:31",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792807351762,
+      "timestamp": "2026-10-24 09:02:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792807351387,
+      "timestamp": "2026-10-24 09:02:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792807351257,
+      "timestamp": "2026-10-24 09:02:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792807351398,
+      "timestamp": "2026-10-24 09:02:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792807351271,
+      "timestamp": "2026-10-24 09:02:30",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792807315208,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 2ms"
+    },
+    {
+      "id": 1792807314477,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 2ms"
+    },
+    {
+      "id": 1792807314441,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792807314915,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792807314812,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792807314845,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792807314502,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792807314967,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792807314273,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792807314994,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792807314682,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792807314968,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792807314313,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792807314346,
+      "timestamp": "2026-10-24 09:01:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792807134758,
+      "timestamp": "2026-10-24 08:58:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792807134265,
+      "timestamp": "2026-10-24 08:58:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792807134483,
+      "timestamp": "2026-10-24 08:58:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792807134768,
+      "timestamp": "2026-10-24 08:58:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792807134963,
+      "timestamp": "2026-10-24 08:58:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 1ms"
+    },
+    {
+      "id": 1792807134823,
+      "timestamp": "2026-10-24 08:58:54",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 0ms"
+    },
+    {
+      "id": 1792807134400,
+      "timestamp": "2026-10-24 08:58:53",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792807076901,
+      "timestamp": "2026-10-24 08:57:56",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792807076244,
+      "timestamp": "2026-10-24 08:57:56",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792807076980,
+      "timestamp": "2026-10-24 08:57:56",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792807076893,
+      "timestamp": "2026-10-24 08:57:56",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 0ms"
+    },
+    {
+      "id": 1792807076403,
+      "timestamp": "2026-10-24 08:57:56",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792807076288,
+      "timestamp": "2026-10-24 08:57:56",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 1ms"
+    },
+    {
+      "id": 1792807076652,
+      "timestamp": "2026-10-24 08:57:56",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 0ms"
+    },
+    {
+      "id": 1792806984151,
+      "timestamp": "2026-10-24 08:56:24",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 0ms"
+    },
+    {
+      "id": 1792806984061,
+      "timestamp": "2026-10-24 08:56:24",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792806984711,
+      "timestamp": "2026-10-24 08:56:24",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 0ms"
+    },
+    {
+      "id": 1792806984381,
+      "timestamp": "2026-10-24 08:56:24",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792806984958,
+      "timestamp": "2026-10-24 08:56:24",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792806984309,
+      "timestamp": "2026-10-24 08:56:24",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 0ms"
+    },
+    {
+      "id": 1792806984292,
+      "timestamp": "2026-10-24 08:56:23",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 1ms"
+    },
+    {
+      "id": 1792806866622,
+      "timestamp": "2026-10-24 08:54:25",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792806866228,
+      "timestamp": "2026-10-24 08:54:25",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 2ms"
+    },
+    {
+      "id": 1792806866286,
+      "timestamp": "2026-10-24 08:54:25",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/slots?date=2025-04-15 304 - 1ms"
+    },
+    {
+      "id": 1792806866213,
+      "timestamp": "2026-10-24 08:54:25",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/stats 304 - 1ms"
+    },
+    {
+      "id": 1792806866021,
+      "timestamp": "2026-10-24 08:54:25",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/users 304 - 1ms"
+    },
+    {
+      "id": 1792806865884,
+      "timestamp": "2026-10-24 08:54:25",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/employees 304 - 0ms"
+    },
+    {
+      "id": 1792806866304,
+      "timestamp": "2026-10-24 08:54:25",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/appointments 304 - 5ms"
+    },
+    {
+      "id": 1792806866706,
+      "timestamp": "2026-10-24 08:54:25",
+      "level": "INFO",
+      "app": "appointment-backend",
+      "message": "GET /api/services 304 - 2ms"
+    }
+  ]
+}
